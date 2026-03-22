@@ -125,6 +125,224 @@
       margin-bottom: 6px;
     }
 
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1.35fr 0.95fr;
+      gap: 20px;
+      align-items: stretch;
+      margin-top: 18px;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .dynamic-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(249, 115, 22, 0.12);
+      border: 1px solid rgba(249, 115, 22, 0.22);
+      color: #ffedd5;
+      font-weight: 700;
+    }
+
+    .hero-sidecard {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      padding: 20px;
+      background:
+        radial-gradient(circle at top left, rgba(250, 204, 21, 0.18), transparent 30%),
+        linear-gradient(180deg, rgba(30, 41, 59, 0.92), rgba(15, 23, 42, 0.86));
+      border: 1px solid rgba(250, 204, 21, 0.16);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    }
+
+    .hero-sidecard h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+    }
+
+    .hero-sidecard p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .highlight-stack {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .highlight-pill {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #fff7ed;
+    }
+
+    .highlight-pill strong {
+      color: #fde68a;
+    }
+
+    .section-shell {
+      margin-top: 24px;
+      padding: 24px;
+      border-radius: 24px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 18px 40px rgba(2, 6, 23, 0.26);
+      backdrop-filter: blur(10px);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 34px);
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 680px;
+      line-height: 1.8;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .feature-card {
+      position: relative;
+      padding: 20px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(30, 41, 59, 0.92), rgba(15, 23, 42, 0.86));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+
+    .feature-card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .feature-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .feature-badge {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(250, 204, 21, 0.12);
+      border: 1px solid rgba(250, 204, 21, 0.2);
+      color: #fde68a;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .feature-card.star {
+      background:
+        radial-gradient(circle at top right, rgba(250, 204, 21, 0.18), transparent 28%),
+        linear-gradient(180deg, rgba(120, 53, 15, 0.88), rgba(67, 20, 7, 0.88));
+      border-color: rgba(250, 204, 21, 0.24);
+    }
+
+    .poll-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .poll-card {
+      padding: 22px;
+      border-radius: 24px;
+      background: rgba(15, 23, 42, 0.82);
+      border: 1px solid rgba(249, 115, 22, 0.16);
+      box-shadow: 0 16px 34px rgba(2, 6, 23, 0.24);
+    }
+
+    .poll-card h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .poll-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .poll-options {
+      display: grid;
+      gap: 10px;
+    }
+
+    .poll-button {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--ink);
+      border-radius: 16px;
+      padding: 12px 14px;
+      font: inherit;
+      cursor: pointer;
+      text-align: right;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+
+    .poll-button:hover {
+      transform: translateY(-1px);
+      border-color: rgba(249, 115, 22, 0.34);
+      background: rgba(249, 115, 22, 0.08);
+    }
+
+    .poll-button.active {
+      border-color: rgba(250, 204, 21, 0.34);
+      background: rgba(250, 204, 21, 0.12);
+      color: #fff7ed;
+    }
+
+    .poll-result {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #fde68a;
+      font-weight: 700;
+    }
+
+    .poll-stats {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -303,6 +521,36 @@
 
     .credit a:hover {
       color: #fff7ed;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .contact-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .contact-button.whatsapp {
+      background: linear-gradient(135deg, #22c55e, #15803d);
+      color: #f0fdf4;
+      box-shadow: 0 14px 28px rgba(34, 197, 94, 0.24);
+      border: 1px solid rgba(134, 239, 172, 0.24);
     }
 
     .bio {
@@ -509,6 +757,10 @@
         padding: 18px 16px;
       }
 
+      .hero-layout {
+        grid-template-columns: 1fr;
+      }
+
       .secret-line,
       .top-credit,
       .badge {
@@ -536,6 +788,8 @@
       }
 
       .stats,
+      .feature-grid,
+      .poll-grid,
       .grid,
       .bio-grid {
         grid-template-columns: 1fr;
@@ -594,26 +848,118 @@
       <span class="badge">نسخة النادي الرسمية للمزح الثقيل شوي</span>
       <br>
       <span class="secret-line">تنبيه: هذا الموقع للمزح فقط وليس للتجريح أو الجدية</span>
-      <h1>تصنيف شباب النادي 2026</h1>
-      <p class="club-name">نادي الماهر للتايكواندو</p>
-      <p>
-        صفحة غير معترف بها رسميًا لكنها معترف بها جدًا بين الشباب.
-        كل الألقاب هنا للمزح فقط وأي واحد يزعل معناته أخذ المركز الصح.
-      </p>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <h1>تصنيف شباب النادي 2026</h1>
+          <p class="club-name">نادي الماهر للتايكواندو</p>
+          <p>
+            صفحة غير معترف بها رسميًا لكنها معترف بها جدًا بين الشباب.
+            كل الألقاب هنا للمزح فقط وأي واحد يزعل معناته أخذ المركز الصح.
+          </p>
+          <div class="dynamic-line">
+            <span>التحية الرسمية:</span>
+            <span id="rotatingGreeting">أهلًا بنادي الضحك والركلات.</span>
+          </div>
 
-      <div class="stats">
-        <div class="stat">
-          <strong>15</strong>
-          اسم داخل التصنيف
+          <div class="stats">
+            <div class="stat">
+              <strong>15</strong>
+              اسم داخل التصنيف
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              مستوى الهبد والثقة
+            </div>
+            <div class="stat">
+              <strong>10</strong>
+              فريم لبروسلي فقط
+            </div>
+          </div>
         </div>
-        <div class="stat">
-          <strong>100%</strong>
-          مستوى الهبد والثقة
-        </div>
-        <div class="stat">
-          <strong>10</strong>
-          فريم لبروسلي فقط
-        </div>
+
+        <aside class="hero-sidecard">
+          <h2>نتائج التصويت السريعة</h2>
+          <p>ملخص سريع لأبرز الألقاب والتصويتات داخل الصفحة، بشكل مرتب وواضح ويعطي الواجهة لمعة أقوى وإحساسًا أفخم.</p>
+          <div class="highlight-stack">
+            <div class="highlight-pill">
+              <span>نجم الأسبوع</span>
+              <strong>كابتن عادل</strong>
+            </div>
+            <div class="highlight-pill">
+              <span>أكثر واحد يضحك</span>
+              <strong>شهم</strong>
+            </div>
+            <div class="highlight-pill">
+              <span>أكثر واحد ينسى الحزام</span>
+              <strong>عبدالرحمن</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="section-head">
+        <h2>إضافات الموقع</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card star">
+          <span class="feature-badge">بطاقة خاصة</span>
+          <h3>نجم الأسبوع</h3>
+          <p>هذا الأسبوع اللقب رايح إلى كابتن عادل، لأن الهيبة لحالها داخلة التمرين قبله بدقيقتين.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-badge">لقب شبابي</span>
+          <h3>أكثر واحد يضحك</h3>
+          <p>شهم إلى الآن محافظ على الصدارة، ويبدو أن الضحك عنده جزء من برنامج الإحماء الرسمي.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-badge">ذاكرة الحزام</span>
+          <h3>أكثر واحد ينسى الحزام</h3>
+          <p>عبدالرحمن مرشح قوي لهذا اللقب، لأن أعذاره جاهزة قبل ما يدخل من باب الصالة أصلًا.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-badge">فكرة الصفحة</span>
+          <h3>ليش انعمل هذا الموقع</h3>
+          <p>انعمل حتى يجمع جو الشباب، واللقطات، والمزح الداخلي، ويحولهم لصفحة تضحككم وتوثق أجواء النادي بطريقة خفيفة.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="section-head">
+        <h2>تصويتات الشباب</h2>
+        <p>تصويتات بسيطة داخل الصفحة. تختار اسمك المفضل، والاختيار ينحفظ على جهازك حتى لو سكرت الصفحة وفتحتها مرة ثانية.</p>
+      </div>
+      <div class="poll-grid">
+        <article class="poll-card">
+          <h3>تصويت: أكثر لاعب محبوب</h3>
+          <p>اختيار سريع من جوّ النادي، بدون حساسيات وبكل حب.</p>
+          <div class="poll-options" data-poll="popular">
+            <button class="poll-button" data-choice="كابتن عادل">كابتن عادل</button>
+            <button class="poll-button" data-choice="أمير">أمير</button>
+            <button class="poll-button" data-choice="عبدالله">عبدالله</button>
+            <button class="poll-button" data-choice="شهم">شهم</button>
+          </div>
+          <div class="poll-result" id="popularResult">صوّت واختر الاسم الأقرب لقلبك.</div>
+          <div class="poll-stats" id="popularStats">عدد الأصوات المسجلة: 0</div>
+        </article>
+
+        <article class="poll-card">
+          <h3>تصويت: أكثر لاعب مخيف بالمزح</h3>
+          <p>المقصود هيبة وضحك، مش تخويف رسمي. كله داخل جو الصفحة.</p>
+          <div class="poll-options" data-poll="scary">
+            <button class="poll-button" data-choice="كابتن عادل">كابتن عادل</button>
+            <button class="poll-button" data-choice="قصي">قصي</button>
+            <button class="poll-button" data-choice="عبدالله">عبدالله</button>
+            <button class="poll-button" data-choice="علي">علي</button>
+          </div>
+          <div class="poll-result" id="scaryResult">صوّت واختر أكثر واحد هيبته تخوفك بالمزح.</div>
+          <div class="poll-stats" id="scaryStats">عدد الأصوات المسجلة: 0</div>
+        </article>
       </div>
     </section>
 
@@ -849,6 +1195,9 @@
         إنستغرام:
         <a href="https://www.instagram.com/bqq7k/" target="_blank" rel="noopener noreferrer">@bqq7k</a>
       </p>
+      <div class="contact-actions">
+        <a class="contact-button whatsapp" href="https://wa.me/962779122780" target="_blank" rel="noopener noreferrer">تواصل مباشر واتساب</a>
+      </div>
     </section>
     <section class="bio">
       <h2>السيرة الذاتية للمبرمج عبدالله الخوالدة</h2>
@@ -872,6 +1221,221 @@
         </article>
       </div>
     </section>
+
+    <section class="section-shell">
+      <div class="section-head">
+        <h2>أعمال المبرمج</h2>
+        <p>نماذج احترافية من نوع المشاريع التي يقدر عبدالله يبنيها بجودة أعلى، شكل أقوى، وتجربة مرتبة من أول دخول حتى آخر ضغطة.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-badge">مشروع احترافي</span>
+          <h3>Corporate Brand Platform</h3>
+          <p>موقع متكامل لشركة أو علامة تجارية يشمل صفحة رئيسية قوية، تعريف بالخدمات، معرض أعمال، تواصل مباشر، وتجربة متجاوبة بشكل احترافي.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">مشروع احترافي</span>
+          <h3>Admin Dashboard & CMS</h3>
+          <p>تطوير لوحة تحكم مرتبة لإدارة الأعضاء، الطلبات، المقالات، أو المنتجات، مع واجهة واضحة وسهلة وتفاصيل تعطي المشروع طابعًا احترافيًا فعليًا.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">مشروع احترافي</span>
+          <h3>Conversion Landing Page</h3>
+          <p>تصميم Landing Pages تركّز على الإقناع والتحويل، مناسبة للمنتجات والخدمات والإعلانات، مع محتوى منظم ولمعة بصرية ترفع قيمة المشروع.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="section-head">
+        <h2>الدورات</h2>
+        <p>هذه مجموعة من الدورات التي أخذها عبدالله وتوضح المجالات التي اشتغل عليها وطوّر نفسه فيها بشكل جدي.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Web Development Bootcamp</h3>
+          <p>دورة شاملة في تطوير الويب تغطي بناء الواجهات، الهيكلة، وتنفيذ مواقع حديثة بشكل عملي ومرتب.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Front-End Engineering</h3>
+          <p>تركز على بناء واجهات احترافية، تحسين تجربة المستخدم، وتنظيم الكود والتصميم بطريقة قوية وواضحة.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Penetration Testing Fundamentals</h3>
+          <p>مقدمة احترافية في اختبار الاختراق، فهم الثغرات، وأساليب الحماية الأساسية في المشاريع والمواقع.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>UI/UX Professional Track</h3>
+          <p>مسار يهتم بتصميم الواجهات، تجربة المستخدم، ترتيب المحتوى، وبناء نظام بصري يعطي المشروع شكلًا أنظف.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Advanced JavaScript</h3>
+          <p>تغطية متقدمة للـ JavaScript تشمل المنطق، التفاعل، وبناء واجهات ديناميكية أكثر احترافية.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>React Front-End Development</h3>
+          <p>بناء تطبيقات واجهات حديثة باستخدام React مع تنظيم أفضل للمكونات وتجربة استخدام سلسة.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Next.js Production Apps</h3>
+          <p>تطوير مواقع وتطبيقات جاهزة للنشر مع أداء أعلى، تنظيم أفضل، وتجربة أقوى على مختلف الأجهزة.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Responsive Web Design</h3>
+          <p>تصميم مواقع متجاوبة تظهر بشكل أنيق على الجوال والتابلت والكمبيوتر بدون تخريب في التجربة.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Full-Stack Web Engineering</h3>
+          <p>دورة تجمع بين الواجهة الأمامية والخلفية لبناء مشاريع متكاملة من الصفر حتى النشر.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>API Design & Integration</h3>
+          <p>فهم ربط الواجهات مع الخدمات والأنظمة الخارجية وتنظيم التكامل مع البيانات بشكل مرتب واحترافي.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Node.js Back-End Essentials</h3>
+          <p>أساسيات الباك إند باستخدام Node.js لبناء خدمات وتطبيقات تعمل بكفاءة وتنظيم جيد.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Database Design Fundamentals</h3>
+          <p>تصميم قواعد بيانات مرتبة وفهم العلاقات بين الجداول والبيانات بشكل يدعم المشاريع القوية.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Cybersecurity Essentials</h3>
+          <p>مفاهيم أساسية في الأمن السيبراني، فهم الهجمات الشائعة، وطرق تقليل المخاطر التقنية.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Ethical Hacking Basics</h3>
+          <p>مدخل عملي لفهم التفكير الهجومي الأخلاقي واكتشاف نقاط الضعف بشكل مسؤول ومنظم.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Web Application Security</h3>
+          <p>التركيز على حماية تطبيقات الويب وفهم الثغرات الشهيرة وكيفية تجنبها أثناء التطوير.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Bug Bounty Foundations</h3>
+          <p>أساسيات البحث عن الثغرات والتعامل مع برامج الـ Bug Bounty بطريقة عملية وممنهجة.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Network Security Fundamentals</h3>
+          <p>فهم البنية الشبكية، التهديدات الأساسية، ومبادئ الحماية التي ترفع وعي المبرمج الأمني.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Digital Forensics Basics</h3>
+          <p>مدخل إلى التحليل الجنائي الرقمي وفهم تتبع الأحداث التقنية وجمع الأدلة الرقمية الأساسية.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-badge">Course</span>
+          <h3>Linux for Security Professionals</h3>
+          <p>استخدام لينكس في بيئات التطوير والأمن بشكل عملي يخدم الشغل الاحترافي بشكل قوي.</p>
+        </article>
+      </div>
+    </section>
   </main>
+  <script>
+    const greetings = [
+      "أهلًا بنادي الضحك والركلات.",
+      "حيّ الله أبطال الصالة وأصحاب الهبد الثقيل.",
+      "جاهزين نشوف مين اليوم نجم الجو كله؟",
+      "هنا الترتيب رسمي جدًا... بشكل غير رسمي تمامًا.",
+      "إذا دخلت الصفحة، اعتبر نفسك داخل على جو النادي كامل."
+    ];
+
+    const greetingTarget = document.getElementById("rotatingGreeting");
+    let greetingIndex = Math.floor(Math.random() * greetings.length);
+
+    if (greetingTarget) {
+      greetingTarget.textContent = greetings[greetingIndex];
+      setInterval(() => {
+        greetingIndex = (greetingIndex + 1) % greetings.length;
+        greetingTarget.textContent = greetings[greetingIndex];
+      }, 30000);
+    }
+
+    const pollTexts = {
+      popular: "تصويتك انحفظ لـ",
+      scary: "اختيارك للمخيف بالمزح راح إلى"
+    };
+
+    document.querySelectorAll(".poll-options").forEach((pollGroup) => {
+      const pollName = pollGroup.dataset.poll;
+      const resultBox = document.getElementById(`${pollName}Result`);
+      const statsBox = document.getElementById(`${pollName}Stats`);
+      const storageKey = `club-poll-${pollName}`;
+      const countsKey = `club-poll-counts-${pollName}`;
+      const savedChoice = localStorage.getItem(storageKey);
+      const storedCounts = localStorage.getItem(countsKey);
+      const counts = storedCounts ? JSON.parse(storedCounts) : {};
+
+      pollGroup.querySelectorAll(".poll-button").forEach((button) => {
+        if (typeof counts[button.dataset.choice] !== "number") {
+          counts[button.dataset.choice] = 0;
+        }
+      });
+
+      const renderStats = () => {
+        if (!statsBox) return;
+        const totalVotes = Object.values(counts).reduce((sum, value) => sum + value, 0);
+        statsBox.textContent = `عدد الأصوات المسجلة: ${totalVotes}`;
+      };
+
+      const paintChoice = (choice) => {
+        pollGroup.querySelectorAll(".poll-button").forEach((button) => {
+          button.classList.toggle("active", button.dataset.choice === choice);
+        });
+
+        if (resultBox) {
+          resultBox.textContent = choice
+            ? `${pollTexts[pollName]} ${choice}`
+            : "صوّت واختر الاسم المناسب.";
+        }
+
+        renderStats();
+      };
+
+      if (savedChoice) {
+        paintChoice(savedChoice);
+      } else {
+        renderStats();
+      }
+
+      pollGroup.querySelectorAll(".poll-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const choice = button.dataset.choice;
+          const previousChoice = localStorage.getItem(storageKey);
+
+          if (previousChoice && previousChoice !== choice && typeof counts[previousChoice] === "number" && counts[previousChoice] > 0) {
+            counts[previousChoice] -= 1;
+          }
+
+          if (previousChoice !== choice) {
+            counts[choice] = (counts[choice] || 0) + 1;
+          }
+
+          localStorage.setItem(storageKey, choice);
+          localStorage.setItem(countsKey, JSON.stringify(counts));
+          paintChoice(choice);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
